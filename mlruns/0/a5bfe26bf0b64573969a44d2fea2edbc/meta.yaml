@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/project/disease/mlruns/0/a5bfe26bf0b64573969a44d2fea2edbc/artifacts
+end_time: 1743761566910
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: a5bfe26bf0b64573969a44d2fea2edbc
+run_name: enchanting-goose-276
+run_uuid: a5bfe26bf0b64573969a44d2fea2edbc
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1743761537598
+status: 3
+tags: []
+user_id: CallmeHoen

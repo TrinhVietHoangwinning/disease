@@ -3,6 +3,18 @@ from cnnClassifier.pipeline.stage_01_data_ingestion import DataIngestionTraining
 from cnnClassifier.pipeline.stage_02_prepare_base_model import PrepareBaseModelTrainingPipeline
 from cnnClassifier.pipeline.stage_03_model_training import ModelTrainingPipeline
 from cnnClassifier.pipeline.stage_04_model_evaluation import EvaluationPipeline
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
+
+mlflow_uri = os.getenv("MLFLOW_TRACKING_URI")
+mlflow_user = os.getenv("MLFLOW_TRACKING_USERNAME")
+mlflow_tokens = os.getenv("MLFLOW_TRACKING_TOKENS")
+
+os.environ["MLFLOW_TRACKING_URI"] = mlflow_uri
+os.environ["MLFLOW_TRACKING_USERNAME"] = mlflow_user
+os.environ["MLFLOW_TRACKING_USERNAME"] = mlflow_tokens
 
 
 STAGE_NAME = "Data Ingestion stage"
